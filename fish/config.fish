@@ -1,7 +1,3 @@
-echo 'Done'
-
-echo -n Setting abbreviations...
-
 abbr g 'git'
 abbr gb 'git branch'
 abbr gbd 'git branch --delete'
@@ -26,8 +22,6 @@ abbr gst 'git status'
 abbr gr 'git remote'
 
 abbr capsctrl 'setxkbmap -option ctrl:nocaps -v'
-
-echo 'Done'
 
 # if status --is-login
 #     set -gx PATH $PATH ~/linux/bin
