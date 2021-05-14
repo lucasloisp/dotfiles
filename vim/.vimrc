@@ -106,11 +106,6 @@ let g:instant_markdown_autostart = 0
 "let g:instant_markdown_python = 1
 autocmd FileType markdown nmap <buffer><silent> <leader>mp :call mdip#MarkdownClipboardImage()<CR>
 
-" Zettel
-let g:zettelkasten = "~/Documents/zettel/"
-command! -nargs=0 NewZettel :execute ":e" zettelkasten . sha256(strftime("%Y%m%d%H%M")) . ".md"
-nnoremap <leader>nz :NewZettel<CR>
-
 " Styling
 colorscheme nord
 set termguicolors
