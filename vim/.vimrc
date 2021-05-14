@@ -108,7 +108,6 @@ autocmd FileType markdown nmap <buffer><silent> <leader>mp :call mdip#MarkdownCl
 
 " Styling
 colorscheme nord
-set termguicolors
 let g:nord_cursor_line_number_background = 1
 let g:nord_uniform_status_lines = 1
 
