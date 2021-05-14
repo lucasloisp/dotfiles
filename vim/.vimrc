@@ -32,9 +32,8 @@ Plug 'mzlogin/vim-markdown-toc'
 Plug 'ferrine/md-img-paste.vim'
 
 " Styling
-Plug 'chriskempson/base16-vim'
+Plug 'arcticicestudio/nord-vim'
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 
 " Javascript
 Plug 'yuezk/vim-js'
@@ -113,9 +112,10 @@ command! -nargs=0 NewZettel :execute ":e" zettelkasten . sha256(strftime("%Y%m%d
 nnoremap <leader>nz :NewZettel<CR>
 
 " Styling
-let base16colorspace = 256
-colorscheme base16-material
+colorscheme nord
 set termguicolors
+let g:nord_cursor_line_number_background = 1
+let g:nord_uniform_status_lines = 1
 
 " Project
 noremap <leader>; :Buffers<CR>
