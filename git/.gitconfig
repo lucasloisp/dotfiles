@@ -1,6 +1,5 @@
-[user]
-	name = Lucas Lois
-	email = lucasloisp@gmail.com
+[include]
+	path = ~/.config/git/credentials
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
