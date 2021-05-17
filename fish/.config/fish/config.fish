@@ -32,4 +32,8 @@ set -x EDITOR vim
 set -x LANG en_US.UTF-8
 set snorin_chevrons blue white blue white
 set snorin_show_git_prefix
-# set -x JAVA_HOME /usr/lib/jvm/java-1.8.0-openjdk-amd64
+
+# Android Development Setup
+set -x JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64
+set -x ANDROID $HOME/Android
+set -x ANDROID_HOME $ANDROID/Sdk
