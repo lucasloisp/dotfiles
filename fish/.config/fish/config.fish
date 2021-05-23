@@ -34,6 +34,6 @@ set snorin_chevrons blue white blue white
 set snorin_show_git_prefix
 
 # Android Development Setup
-set -x JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64
+set -x JAVA_HOME /usr/lib/jvm/java-16-openjdk-amd64
 set -x ANDROID $HOME/Android
 set -x ANDROID_HOME $ANDROID/Sdk
