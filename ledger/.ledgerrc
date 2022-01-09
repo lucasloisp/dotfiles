@@ -1,3 +1,2 @@
 --file ~/Documents/finances/journal.ledger
---price-db ~/Documents/finances/prices.db
 --strict
