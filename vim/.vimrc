@@ -3,8 +3,6 @@ set backspace=2
 filetype off
 set relativenumber
 set number
-set rnu
-set nu
 set cc=80
 set cursorline
 syntax on
@@ -12,6 +10,13 @@ filetype plugin indent on
 set encoding=utf-8
 
 set rtp+=~/.vim/bundle/Vundle.vim
+
+let data_dir = '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'VundleVim/Vundle.vim'
@@ -21,6 +26,10 @@ Plug 'SirVer/ultisnips'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'dag/vim-fish'
+
+" Git
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 " Text Modes
 Plug 'tpope/vim-speeddating'
@@ -70,7 +79,7 @@ call plug#end()
 
 " Misc
 let mapleader=" "
-imap jj <Esc>
+inoremap jj <Esc>
 
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
@@ -110,6 +119,7 @@ autocmd FileType markdown nmap <buffer><silent> <leader>mp :call mdip#MarkdownCl
 colorscheme nord
 let g:nord_cursor_line_number_background = 1
 let g:nord_uniform_status_lines = 1
+highlight Comment ctermfg=3
 
 " Project
 noremap <leader>; :Buffers<CR>

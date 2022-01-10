@@ -23,17 +23,30 @@ abbr gr 'git remote'
 
 abbr capsctrl 'setxkbmap -option ctrl:nocaps -v'
 
-# if status --is-login
-#     set -gx PATH $PATH ~/linux/bin
-# end
-
-
 set -x EDITOR vim
 set -x LANG en_US.UTF-8
 set snorin_chevrons blue white blue white
 set snorin_show_git_prefix
 
+# Ruby Development Setup
+switch (uname)
+case Darwin
+    status --is-interactive; and . (rbenv init -|psub)
+end
+
 # Android Development Setup
-set -x JAVA_HOME ~/.sdkman/candidates/java/17.0.1-open
-set -x ANDROID $HOME/Android
-set -x ANDROID_HOME $ANDROID/Sdk
+switch (uname)
+case Darwin
+    set -x JAVA_HOME "/Users/december/Library/Java/JavaVirtualMachines/corretto-1.8.0_302/Contents/Home"
+    set -x ANDROID "$HOME/Library/Android"
+    set -x ANDROID_HOME "$ANDROID/sdk"
+    fish_add_path $ANDROID_HOME/emulator
+    fish_add_path $ANDROID_HOME/tools
+    fish_add_path $ANDROID_HOME/tools/bin
+    fish_add_path $ANDROID_HOME/platform-tools
+    fish_add_path /opt/homebrew/bin
+case Linux
+    set -x JAVA_HOME ~/.sdkman/candidates/java/17.0.1-open
+    set -x ANDROID $HOME/Android
+    set -x ANDROID_HOME $ANDROID/Sdk
+end

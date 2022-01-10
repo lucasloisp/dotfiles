@@ -1,0 +1,66 @@
+snippet rcsl "React stateless component" bA
+import React${1:, {$2}} from 'react';
+
+const `!p snip.rv = snip.basename` = (${3:{ $4 }}) => {
+  return ${5:null};
+}
+endsnippet
+
+# Redux
+snippet rxred "redux reducer" bA
+const initialState = {
+  ${1:loading\: false},
+};
+
+export default (state = initialState, action) => {
+  switch (action.type) {
+    case '`!p snip.rv = snip.basename`/${2:MY_ACTION}':
+      return {...state, $3};
+
+    default:
+      return state;
+  }
+};
+
+export const ${4:myAction} = () => ({
+  type: '`!p snip.rv = snip.basename`/$2',
+  $0
+});
+endsnippet
+
+snippet rxact "redux action" b
+export const ${1:myAction} = ($2) => ({
+  type: '`!p snip.rv = snip.basename`/$3'${4:,
+  payload: $5}
+});
+endsnippet
+
+snippet rxcasepromise "Redux case switch on a Promise action" b
+case '`!p snip.rv = snip.basename`/${1:MY_ACTION}_PENDING':
+  return {...state, ${2:pending}: ${3: true}};
+
+case '`!p snip.rv = snip.basename`/$1_REJECTED':
+  return {...state, $4};
+
+case '`!p snip.rv = snip.basename`/$1_FULFILLED':
+  return {...state, $5};
+endsnippet
+
+snippet rxactpromise "Redux Promise action" b
+export const ${1:myAction} = () => (dispatch, getState, api) => dispatch({
+  type: '`!p snip.rv = snip.basename`/${2:ACTION}',
+  payload: ${3:api.$4}
+});
+endsnippet
+
+snippet rxconnect "Redux connect" b
+import { connect } from 'react-redux';
+
+const mapStateToProps = state => ({
+});
+
+const mapDispatchToProps = {
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(`!p snip.rv = snip.basename`);
+endsnippet
