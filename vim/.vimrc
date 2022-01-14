@@ -14,7 +14,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 let data_dir = '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
   silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+  au VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
 call plug#begin('~/.vim/plugged')
@@ -87,11 +87,11 @@ let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 " Ledger
 au BufNewFile,BufRead *.ldg,*.ledger setf ledger | comp ledger
-autocmd FileType ledger setlocal foldmethod=syntax
+au FileType ledger setlocal foldmethod=syntax
 
 " Text
-autocmd BufRead,BufNewFile *.tex setlocal spell
-autocmd BufRead,BufNewFile *.md setlocal spell
+au BufRead,BufNewFile *.tex setlocal spell
+au BufRead,BufNewFile *.md setlocal spell
 au FileType markdown vmap <leader>mf :EasyAlign*<Bar><Enter>
 au FileType markdown setl conceallevel=2
 au FileType tex setl conceallevel=0
@@ -113,7 +113,7 @@ let g:instant_markdown_autostart = 0
 "let g:instant_markdown_autoscroll = 0
 "let g:instant_markdown_port = 8888
 "let g:instant_markdown_python = 1
-autocmd FileType markdown nmap <buffer><silent> <leader>mp :call mdip#MarkdownClipboardImage()<CR>
+au FileType markdown nmap <buffer><silent> <leader>mp :call mdip#MarkdownClipboardImage()<CR>
 
 " Styling
 colorscheme nord
@@ -127,7 +127,7 @@ noremap <leader>f :GFiles<CR>
 
 " Javascript configuration
 let g:prettier#autoformat = 0
-autocmd BufWritePre *.js PrettierAsync
+au BufWritePre *.js PrettierAsync
 let g:ale_linters = {
   \ 'javascript': ['eslint']
   \ }
@@ -137,7 +137,7 @@ let g:ale_fixers = {
 
 " Haskell
 let g:haskell_indent_disable = 1
-autocmd BufWritePost *.hs :call RunOrmolu()
+au BufWritePost *.hs :call RunOrmolu()
 
 " Coc Language Server
 nmap <leader>lf :call CocAction('format')<CR>
