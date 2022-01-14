@@ -1,0 +1,50 @@
+{
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 12,
+  "editor.formatOnSave": true,
+  "editor.lineNumbers": "relative",
+  "editor.minimap.enabled": false,
+  "editor.rulers": [80],
+  "gitlens.codeLens.enabled": false,
+  "gitlens.defaultDateFormat": null,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.statusBar.enabled": false,
+  "nasc-touchbar.addCursorBelow": false,
+  "nasc-touchbar.goToDefinition": false,
+  "nasc-touchbar.rename": true,
+  "nasc-touchbar.showReferences": true,
+  "nasc-touchbar.togglePanel": false,
+  "terminal.integrated.fontSize": 12,
+  "workbench.colorTheme": "Nord",
+  "workbench.editor.showTabs": true,
+  "workbench.preferredDarkColorTheme": "Nord",
+  "workbench.preferredLightColorTheme": "Solarized Light",
+  "workbench.settings.editor": "json",
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideTabs": false,
+  /**** Language-specific settings ****/
+  "files.associations": {
+    "Fastfile": "ruby",
+    "Matchfile": "ruby"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.validate.enable": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.validate.enable": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
