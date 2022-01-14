@@ -92,6 +92,7 @@ au FileType ledger setlocal foldmethod=syntax
 " Text
 au BufRead,BufNewFile *.tex setlocal spell
 au BufRead,BufNewFile *.md setlocal spell
+au BufWinEnter * normal zR
 au FileType markdown vmap <leader>mf :EasyAlign*<Bar><Enter>
 au FileType markdown setl conceallevel=2
 au FileType tex setl conceallevel=0
