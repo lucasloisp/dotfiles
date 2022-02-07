@@ -37,7 +37,7 @@ end
 # Android Development Setup
 switch (uname)
 case Darwin
-    set -x JAVA_HOME "/Users/december/Library/Java/JavaVirtualMachines/corretto-1.8.0_302/Contents/Home"
+    set -x JAVA_HOME "$HOME/.sdkman/candidates/java/as-embedded"
     set -x ANDROID "$HOME/Library/Android"
     set -x ANDROID_HOME "$ANDROID/sdk"
     fish_add_path $ANDROID_HOME/emulator
