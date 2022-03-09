@@ -21,6 +21,9 @@ abbr grb 'git rebase'
 abbr gst 'git status'
 abbr gr 'git remote'
 
+abbr tx 'tmux'
+abbr txls 'tmux ls'
+
 abbr capsctrl 'setxkbmap -option ctrl:nocaps -v'
 
 set -x EDITOR vim
