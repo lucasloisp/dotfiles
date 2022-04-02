@@ -88,6 +88,9 @@ let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 " Ledger
 au BufNewFile,BufRead *.ldg,*.ledger setf ledger | comp ledger
 au FileType ledger setlocal foldmethod=syntax
+let g:ledger_maxwidth = 80
+let g:ledger_align_at = 50
+let g:ledger_fold_blanks = 0
 
 " Text
 au BufRead,BufNewFile *.tex setlocal spell
