@@ -1,0 +1,8 @@
+{
+  "promptDelete": false,
+  "vimMode": true,
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current",
+  "newLinkFormat": "shortest",
+  "showFrontmatter": true
+}
