@@ -48,6 +48,7 @@ case Darwin
     fish_add_path $ANDROID_HOME/platform-tools
     fish_add_path /opt/homebrew/bin
     fish_add_path "$HOME/.cargo/bin"
+    fish_add_path "$HOME/.local/bin"
 case Linux
     set -x JAVA_HOME ~/.sdkman/candidates/java/17.0.1-open
     set -x ANDROID $HOME/Android
