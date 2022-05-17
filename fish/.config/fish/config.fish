@@ -44,7 +44,7 @@ case Darwin
     set -x ANDROID_HOME "$ANDROID/sdk"
     fish_add_path $ANDROID_HOME/emulator
     fish_add_path $ANDROID_HOME/tools
-    fish_add_path $ANDROID_HOME/tools/bin
+    fish_add_path $ANDROID_HOME/cmdline-tools/latest/bin/
     fish_add_path $ANDROID_HOME/platform-tools
     fish_add_path /opt/homebrew/bin
     fish_add_path "$HOME/.cargo/bin"
