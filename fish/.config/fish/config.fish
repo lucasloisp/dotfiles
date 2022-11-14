@@ -20,12 +20,9 @@ abbr gpra 'git pretty --all'
 abbr grb 'git rebase'
 abbr gst 'git status'
 abbr gr 'git remote'
-abbr diskusage 'ncdu'
 
 abbr tx 'tmux'
 abbr txls 'tmux ls'
-
-abbr capsctrl 'setxkbmap -option ctrl:nocaps -v'
 
 set -x EDITOR vim
 set -x LANG en_US.UTF-8
@@ -41,6 +38,8 @@ end
 # Android Development Setup
 switch (uname)
 case Darwin
+    abbr diskusage 'ncdu'
+
     set -x JAVA_HOME "$HOME/.sdkman/candidates/java/as-embedded"
     set -x ANDROID "$HOME/Library/Android"
     set -x ANDROID_HOME "$ANDROID/sdk"
@@ -52,6 +51,8 @@ case Darwin
     fish_add_path /opt/homebrew/bin
     fish_add_path "$HOME/.cargo/bin"
 case Linux
+    abbr capsctrl 'setxkbmap -option ctrl:nocaps -v'
+
     set -x JAVA_HOME ~/.sdkman/candidates/java/17.0.1-open
     set -x ANDROID $HOME/Android
     set -x ANDROID_HOME $ANDROID/Sdk
