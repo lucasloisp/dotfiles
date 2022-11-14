@@ -20,6 +20,7 @@ abbr gpra 'git pretty --all'
 abbr grb 'git rebase'
 abbr gst 'git status'
 abbr gr 'git remote'
+abbr diskusage 'ncdu'
 
 abbr tx 'tmux'
 abbr txls 'tmux ls'
