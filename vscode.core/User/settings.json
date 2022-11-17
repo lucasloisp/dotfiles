@@ -1,6 +1,7 @@
 {
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.fontFamily": "DejaVu Sans Mono",
+  "editor.tabSize": 2,
   "editor.fontLigatures": false,
   "editor.fontSize": 15,
   "editor.formatOnSave": true,
@@ -54,5 +55,8 @@
   "typescript.validate.enable": true,
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "editor.renderWhitespace": "all",
+  "editor.stickyScroll.enabled": true,
+  "svg.preview.mode": "svg"
 }
