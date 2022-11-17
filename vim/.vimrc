@@ -45,10 +45,9 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'vim-airline/vim-airline'
 
 " Javascript
-Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
-Plug 'prettier/vim-prettier', {
-  \ 'for': ['javascript'] }
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
 
 " Haskell
 Plug 'neovimhaskell/haskell-vim'
@@ -130,14 +129,23 @@ noremap <leader>; :Buffers<CR>
 noremap <leader>f :GFiles<CR>
 
 " Javascript configuration
-let g:prettier#autoformat = 0
-au BufWritePre *.js PrettierAsync
+let g:coc_global_extensions = ['coc-tsserver']
+nmap <leader>ac  <Plug>(coc-codeaction)
+nmap <leader>qf  <Plug>(coc-fix-current)
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
 let g:ale_linters = {
-  \ 'javascript': ['eslint']
+  \ 'javascript': ['eslint'],
+  \ 'typescript': ['eslint']
   \ }
 let g:ale_fixers = {
-  \ 'javascript': ['eslint']
+  \ 'javascript': ['prettier'],
+  \ 'typescript': ['prettier']
   \ }
+let g:ale_fix_on_save = 1
 
 " Haskell
 let g:haskell_indent_disable = 1
