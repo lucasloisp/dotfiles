@@ -130,8 +130,15 @@ noremap <leader>f :GFiles<CR>
 
 " Javascript configuration
 let g:coc_global_extensions = ['coc-tsserver']
+xmap <leader>ac  <Plug>(coc-codeaction-selected)
+nmap <leader>ac  <Plug>(coc-codeaction-selected)
 nmap <leader>ac  <Plug>(coc-codeaction)
 nmap <leader>qf  <Plug>(coc-fix-current)
+nmap <leader>cl  <Plug>(coc-codelens-action)
+nmap <silent> <leader>re <Plug>(coc-codeaction-refactor)
+xmap <silent> <leader>r <Plug>(coc-codeaction-refactor-selected)
+nmap <silent> <leader>r <Plug>(coc-codeaction-refactor-selected)
+nmap <leader>rn <Plug>(coc-rename)
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
@@ -139,11 +146,13 @@ nmap <silent> gr <Plug>(coc-references)
 
 let g:ale_linters = {
   \ 'javascript': ['eslint'],
-  \ 'typescript': ['eslint']
+  \ 'typescript': ['eslint'],
+  \ 'typescriptreact': ['eslint']
   \ }
 let g:ale_fixers = {
   \ 'javascript': ['prettier'],
-  \ 'typescript': ['prettier']
+  \ 'typescript': ['prettier'],
+  \ 'typescriptreact': ['prettier']
   \ }
 let g:ale_fix_on_save = 1
 
