@@ -53,7 +53,8 @@ case Darwin
 case Linux
     abbr capsctrl 'setxkbmap -option ctrl:nocaps -v'
 
-    set -x JAVA_HOME ~/.sdkman/candidates/java/17.0.1-open
+    set -x JAVA_HOME "/opt/android-studio/jbr"
     set -x ANDROID $HOME/Android
     set -x ANDROID_HOME $ANDROID/Sdk
+    set -x SYSTEMD_EDITOR vim
 end
