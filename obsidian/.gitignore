@@ -1,1 +1,5 @@
-.obsidian/plugins/
+.config/obsidian/personal_vault/plugins/
+.config/obsidian/personal_vault/themes/
+.config/obsidian/personal_vault/types.json
+.config/obsidian/personal_vault/workspace.json
+.config/obsidian/personal_vault/bookmarks.json

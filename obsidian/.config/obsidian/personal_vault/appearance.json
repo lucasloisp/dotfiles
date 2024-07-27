@@ -1,0 +1,8 @@
+{
+  "textFontFamily": "DejaVu Sans",
+  "interfaceFontFamily": "DejaVu Sans",
+  "monospaceFontFamily": "Source Code Pro",
+  "baseFontSize": 18,
+  "cssTheme": "Things",
+  "nativeMenus": false
+}

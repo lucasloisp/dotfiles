@@ -4,6 +4,8 @@
   "switcher",
   "graph",
   "backlink",
+  "canvas",
+  "outgoing-link",
   "tag-pane",
   "page-preview",
   "daily-notes",
@@ -11,10 +13,8 @@
   "note-composer",
   "command-palette",
   "editor-status",
-  "markdown-importer",
-  "zk-prefixer",
+  "bookmarks",
   "outline",
   "word-count",
-  "open-with-default-app",
   "file-recovery"
 ]
