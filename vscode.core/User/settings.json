@@ -7,7 +7,7 @@
   "editor.formatOnSave": true,
   "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
-  "editor.rulers": [120],
+  "editor.rulers": [80, 120],
   "vim.textwidth": 120,
   "explorer.confirmDragAndDrop": false,
   "files.exclude": {

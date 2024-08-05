@@ -1,6 +1,6 @@
 [
   "obsidian-excalidraw-plugin",
-  "obsidian-git",
   "obsidian-kanban",
-  "markdown-table-editor"
+  "markdown-table-editor",
+  "obsidian-git"
 ]

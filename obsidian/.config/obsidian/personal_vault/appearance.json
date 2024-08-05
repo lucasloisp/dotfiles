@@ -4,5 +4,6 @@
   "monospaceFontFamily": "Source Code Pro",
   "baseFontSize": 18,
   "cssTheme": "Things",
-  "nativeMenus": false
+  "nativeMenus": false,
+  "accentColor": ""
 }
