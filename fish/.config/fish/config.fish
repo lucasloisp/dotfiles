@@ -53,6 +53,7 @@ case Linux
     set -x ANDROID $HOME/Android
     set -x ANDROID_HOME $ANDROID/Sdk
     set -x SYSTEMD_EDITOR vim
+    fish_add_path "/opt/nvim-linux64/bin"
 end
 
 # Ruby Development Setup
@@ -60,3 +61,5 @@ switch (uname)
 case Darwin
     status --is-interactive; and . (rbenv init -|psub)
 end
+
+zoxide init fish | source
