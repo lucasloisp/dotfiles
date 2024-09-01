@@ -1,10 +1,17 @@
 #!/bin/sh
 code --install-extension arcticicestudio.nord-visual-studio-code
-code --install-extension dbaeumer.vscode-eslint
+code --install-extension davidanson.vscode-markdownlint
 code --install-extension eamodio.gitlens
 code --install-extension esbenp.prettier-vscode
+code --install-extension github.copilot
+code --install-extension github.copilot-chat
+code --install-extension gruntfuggly.todo-tree
 code --install-extension ms-vscode-remote.remote-containers
-code --install-extension ms-vsliveshare.vsliveshare
-code --install-extension naumovs.color-highlight
-code --install-extension panzerstadt.light-dark-toggle
+code --install-extension ms-vscode-remote.remote-ssh
+code --install-extension ms-vscode-remote.remote-ssh-edit
+code --install-extension ms-vscode.remote-explorer
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension tomoki1207.pdf
 code --install-extension vscodevim.vim
+code --install-extension yrm.type-challenges
+code --install-extension yzhang.markdown-all-in-one
