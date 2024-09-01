@@ -3,5 +3,5 @@
   "promptDelete": true,
   "alwaysUpdateLinks": true,
   "newFileLocation": "root",
-  "newLinkFormat": "absolute"
+  "newLinkFormat": "shortest"
 }
