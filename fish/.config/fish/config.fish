@@ -40,6 +40,7 @@ case Darwin
     set -x ANDROID "$HOME/Library/Android"
     set -x ANDROID_HOME "$ANDROID/sdk"
     set -x ANDROID_SDK_ROOT "$ANDROID/sdk"
+    set -x CODEX_HOME "$HOME/.config/codex"
     fish_add_path $ANDROID_HOME/emulator
     fish_add_path $ANDROID_HOME/tools
     fish_add_path $ANDROID_HOME/cmdline-tools/latest/bin/
