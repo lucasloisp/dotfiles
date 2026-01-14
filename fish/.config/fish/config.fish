@@ -29,6 +29,8 @@ set -x LANG en_US.UTF-8
 set snorin_chevrons blue white blue white
 set snorin_show_git_prefix
 
+set fish_greeting
+
 # Android Development Setup
 switch (uname)
 case Darwin
