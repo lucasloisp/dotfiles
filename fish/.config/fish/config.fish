@@ -46,6 +46,7 @@ case Darwin
     fish_add_path /usr/local/bin
     fish_add_path /opt/homebrew/bin
     fish_add_path "$HOME/.cargo/bin"
+    fish_add_path "$HOME/.bun/bin"
 case Linux
     abbr capsctrl 'setxkbmap -option ctrl:nocaps -v'
 
