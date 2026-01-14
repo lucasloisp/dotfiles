@@ -62,5 +62,3 @@ switch (uname)
 case Darwin
     status --is-interactive; and . (rbenv init -|psub)
 end
-
-zoxide init fish | source
