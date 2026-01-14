@@ -24,7 +24,7 @@ abbr gr 'git remote'
 abbr tx 'tmux'
 abbr txls 'tmux ls'
 
-set -x EDITOR vim
+set -x EDITOR nvim
 set -x LANG en_US.UTF-8
 set snorin_chevrons blue white blue white
 set snorin_show_git_prefix
