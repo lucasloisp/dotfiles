@@ -36,7 +36,7 @@ switch (uname)
 case Darwin
     abbr diskusage 'ncdu'
 
-    set -x JAVA_HOME "/Applications/Android Studio.app/Contents/jbr/Contents/Home/"
+    set -x JAVA_HOME "/Library/Java/JavaVirtualMachines/openjdk.jdk/Contents/Home"
     set -x ANDROID "$HOME/Library/Android"
     set -x ANDROID_HOME "$ANDROID/sdk"
     set -x ANDROID_SDK_ROOT "$ANDROID/sdk"
