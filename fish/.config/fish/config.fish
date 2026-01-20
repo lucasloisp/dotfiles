@@ -67,3 +67,6 @@ switch (uname)
 case Darwin
     status --is-interactive; and . (rbenv init -|psub)
 end
+
+# NodeJS development setup
+bass source ~/.nvm/nvm.sh
