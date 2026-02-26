@@ -13,9 +13,12 @@
 	helper = cache
 [commit]
 	verbose = true
+	gpgsign = true
 [init]
 	defaultBranch = main
 [pull]
 	rebase = false
 [push]
 	autoSetupRemote = false
+[tag]
+	gpgSign = false
