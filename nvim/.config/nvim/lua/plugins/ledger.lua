@@ -4,12 +4,18 @@ return {
 		version = false,
 		ft = "ledger",
 		keys = {
-			-- { "lt", ":call ledger#transaction_state_toggle(line('.'), '*?!')<cr>", desc = "Toggle transaction" },
-			-- {
-			-- 	"lp",
-			-- 	"<cmd>:call ledger#transaction_post_state_toggle(line('.'), '*?!')<cr>",
-			-- 	desc = "Toggle posting",
-			-- },
+			{
+				"<localleader>t",
+				"<cmd>call ledger#transaction_state_toggle(line('.'), ' *!')<cr>",
+				desc = "Ledger: cycle transaction state (* ! none)",
+				ft = "ledger",
+			},
+			{
+				"<localleader>p",
+				"<cmd>call ledger#transaction_post_state_toggle(line('.'), ' *!')<cr>",
+				desc = "Ledger: cycle posting state (* ! none)",
+				ft = "ledger",
+			},
 		},
 		init = function()
 			vim.g.ledger_maxwidth = 80
