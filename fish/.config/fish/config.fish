@@ -4,18 +4,22 @@ abbr gbd 'git branch --delete'
 abbr ga 'git add'
 abbr gap 'git add -p'
 abbr gc 'git commit'
+abbr gca 'git commit -a'
 abbr gcam 'git commit --amend'
 abbr gcb 'git checkout -b'
 abbr gco 'git checkout'
 abbr gcp 'git cherry-pick'
 abbr gd 'git diff'
 abbr gdc 'git diff --cached'
+abbr gf 'git fetch'
 abbr gpl 'git pull'
+abbr gm 'git merge'
 abbr gp 'git push'
 abbr gpr 'git pretty'
 abbr gpra 'git pretty --all'
 abbr grb 'git rebase'
 abbr gst 'git status'
+abbr gr 'git remote'
 
 abbr tx tmux
 
@@ -49,10 +53,11 @@ status --is-interactive; and . (rbenv init -|psub)
 
 # NodeJS development setup
 bass source ~/.nvm/nvm.sh
-
-# pnpm
-set -gx PNPM_HOME "/Users/llois-c/Library/pnpm"
+set -gx PNPM_HOME "$HOME/Library/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
+    set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
+
+# mise — tool version manager
+mise activate fish | source
