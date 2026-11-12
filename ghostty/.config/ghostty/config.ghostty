@@ -1,0 +1,9 @@
+mouse-hide-while-typing = true
+scrollback-limit = 10000000
+
+
+keybind = super+r=reload_config
+window-save-state = always
+
+theme = dark: Catppuccin Macchiato,light: Gruvbox Light
+
