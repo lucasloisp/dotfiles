@@ -1,6 +1,8 @@
 mouse-hide-while-typing = true
 scrollback-limit = 10000000
 
+command = /opt/homebrew/bin/fish
+
 
 keybind = super+r=reload_config
 window-save-state = always
